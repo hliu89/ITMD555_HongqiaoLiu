@@ -20,7 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.xk.trucktrade.R;
-import com.xk.trucktrade.ui.custom.MaterialProgressDrawable;
+import com.xk.trucktrade.frontend.tools.MaterialProgressDrawable;
 
 
 public class ViewUtils {

@@ -21,7 +21,7 @@
         android:layout_alignBaseline="@id/et_phonenumber"
         android:gravity="center_vertical|right"
         android:paddingRight="@dimen/activity_horizontal_margin"
-        android:text="phone number"
+        android:text="username"
         android:textColor="@color/secondary_text"
         android:textSize="@dimen/text_size_h" />
 

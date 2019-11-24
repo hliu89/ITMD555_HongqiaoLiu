@@ -41,7 +41,7 @@
             android:textSize="@dimen/text_size_xh" />
 
 
-        <com.xk.trucktrade.ui.custom.CircleImageView
+        <com.xk.trucktrade.frontend.tools.CircleImageView
             android:id="@+id/iv_right"
             android:layout_width="65dp"
             android:layout_height="65dp"

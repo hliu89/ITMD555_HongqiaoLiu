@@ -15,7 +15,7 @@ public class TruckBean implements Serializable{
     private String weight;
     private String variety;
     private String truckCardNumber;
-    private UserBean master;
+    private User master;
     private List<String> truckPhotos;
 
     public TruckBean() {
@@ -86,11 +86,11 @@ public class TruckBean implements Serializable{
         this.truckCardNumber = truckCardNumber;
     }
 
-    public UserBean getMaster() {
+    public User getMaster() {
         return master;
     }
 
-    public void setMaster(UserBean master) {
+    public void setMaster(User master) {
         this.master = master;
     }
 

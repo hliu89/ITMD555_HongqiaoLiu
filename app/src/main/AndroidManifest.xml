@@ -33,19 +33,19 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="R172XK7vyi2xo9GKoF1SkotCwYIuSVSD" />
 
-        <activity android:name=".ui.activity.HomeActivity" />
-        <activity android:name=".ui.activity.MyTrucksActivity" />
-        <activity android:name=".ui.activity.FindFriendActivity" />
-        <activity android:name=".ui.activity.AddTruckActivity" />
-        <activity android:name=".ui.activity.PublishSourceActivity" />
-        <activity android:name=".ui.activity.IntroduceActivity" />
-        <activity android:name=".ui.activity.NameActivity" />
-        <activity android:name=".ui.activity.SelectExactPositionActivity" />
-        <activity android:name=".ui.activity.ChangeMyInfoActivity" />
-        <activity android:name=".ui.activity.TruckSourceSetailActivity" />
+        <activity android:name=".frontend.ui.HomeActivity" />
+        <activity android:name=".frontend.ui.MyTrucksActivity" />
+        <activity android:name=".frontend.ui.FindFriendActivity" />
+        <activity android:name=".frontend.ui.AddTruckActivity" />
+        <activity android:name=".frontend.ui.PublishSourceActivity" />
+        <activity android:name=".frontend.ui.IntroduceActivity" />
+        <activity android:name=".frontend.ui.NameActivity" />
+        <activity android:name=".frontend.ui.SelectExactPositionActivity" />
+        <activity android:name=".frontend.ui.ChangeMyInfoActivity" />
+        <activity android:name=".frontend.ui.TruckSourceSetailActivity" />
         <service android:name=".im.service.ImService" />
 
-        <activity android:name=".ui.activity.LoginActivity">
+        <activity android:name=".frontend.ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

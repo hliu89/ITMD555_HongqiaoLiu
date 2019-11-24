@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.xk.trucktrade.ui.custom.MToolbar
+    <com.xk.trucktrade.frontend.tools.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.frontend.tools.MToolbar>
 
     <ScrollView
         android:layout_width="match_parent"

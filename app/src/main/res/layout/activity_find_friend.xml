@@ -5,10 +5,10 @@
     android:background="@color/background_blue"
     android:orientation="vertical">
 
-    <com.xk.trucktrade.ui.custom.MToolbar
+    <com.xk.trucktrade.frontend.tools.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.frontend.tools.MToolbar>
 
     <RelativeLayout
         android:id="@+id/rl_find_friend"
@@ -18,7 +18,7 @@
         android:layout_marginBottom="2dp"
         android:background="@drawable/round_rectangle_write">
 
-        <com.xk.trucktrade.ui.custom.autoqueryedittext.SearchEditText
+        <com.xk.trucktrade.frontend.tools.autoqueryedittext.SearchEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

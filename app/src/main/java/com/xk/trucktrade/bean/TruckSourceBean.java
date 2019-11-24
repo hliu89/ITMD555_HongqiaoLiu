@@ -1,8 +1,5 @@
 package com.xk.trucktrade.bean;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
 import java.io.Serializable;
 
 /**
@@ -19,13 +16,13 @@ public class TruckSourceBean implements Serializable{
     private String state;
     private String truck_id;
     private TruckBean truckBean;
-    private UserBean userBean;
+    private User userBean;
 
-    public UserBean getUserBean() {
+    public User getUserBean() {
         return userBean;
     }
 
-    public void setUserBean(UserBean userBean) {
+    public void setUserBean(User userBean) {
         this.userBean = userBean;
     }
 
