@@ -4,6 +4,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.ui.activity.FindFriendActivity;
 import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
 import com.infinet.leviathan.myapplication.utils.ViewUtils;
 

@@ -11,6 +11,7 @@ import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterT
 import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterUrl;
 import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.view.betterDoubleGrid.BetterDoubleGridView;
 import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.view.doubleGrid.DoubleGridView;
+import com.infinet.leviathan.myapplication.utils.XmlUtils;
 
 import java.util.ArrayList;
 import java.util.List;

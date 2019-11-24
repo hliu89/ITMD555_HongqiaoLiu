@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.utils.AvatarProduceUtil;
 import com.infinet.leviathan.myapplication.utils.ViewUtils;
 
 

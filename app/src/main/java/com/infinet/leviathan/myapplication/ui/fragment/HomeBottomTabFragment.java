@@ -18,6 +18,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.ui.activity.HomeActivity;
+import com.infinet.leviathan.myapplication.ui.activity.PublishSourceActivity;
 import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
 import com.infinet.leviathan.myapplication.utils.ViewUtils;
 

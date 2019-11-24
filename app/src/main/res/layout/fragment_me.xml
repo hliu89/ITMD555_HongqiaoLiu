@@ -28,7 +28,7 @@
                     android:layout_marginLeft="30dp"
                     android:background="@drawable/circle_write_line">
 
-                    <com.xk.trucktrade.ui.custom.CircleImageView
+                    <com.infinet.leviathan.myapplication.ui.custom.CircleImageView
                         android:id="@+id/civ_owner_phone"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -107,15 +107,15 @@
                     android:layout_height="80dp"></FrameLayout>
             </RelativeLayout>
 
-            <com.xk.trucktrade.ui.custom.OptionItemView
+            <com.infinet.leviathan.myapplication.ui.custom.OptionItemView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 app:left_img="@mipmap/approve"
                 app:left_text="Company Certification"
                 app:show_bottom_division="true"
-                app:show_jiantou="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+                app:show_jiantou="true"></com.infinet.leviathan.myapplication.ui.custom.OptionItemView>
 
-            <com.xk.trucktrade.ui.custom.OptionItemView
+            <com.infinet.leviathan.myapplication.ui.custom.OptionItemView
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
 
@@ -123,9 +123,9 @@
                 app:left_text="my vehicle"
                 android:id="@+id/my_trucks"
                 app:show_bottom_division="true"
-                app:show_jiantou="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+                app:show_jiantou="true"></com.infinet.leviathan.myapplication.ui.custom.OptionItemView>
 
-            <com.xk.trucktrade.ui.custom.OptionItemView
+            <com.infinet.leviathan.myapplication.ui.custom.OptionItemView
                 android:id="@+id/ov_exit"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
@@ -135,7 +135,7 @@
                 app:left_text="sign out"
                 app:show_bottom_division="true"
                 app:show_jiantou="false"
-                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+                app:show_top_division="true"></com.infinet.leviathan.myapplication.ui.custom.OptionItemView>
         </LinearLayout>
     </ScrollView>
 

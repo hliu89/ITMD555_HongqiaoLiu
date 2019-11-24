@@ -3,8 +3,7 @@ package com.infinet.leviathan.myapplication.ui.fragment;
 import android.view.View;
 
 import com.infinet.leviathan.myapplication.R;
-
-import static java.security.AccessController.getContext;
+import com.infinet.leviathan.myapplication.ui.adapter.CargoInfoAdapter;
 
 
 /**

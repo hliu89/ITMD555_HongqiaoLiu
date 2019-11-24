@@ -30,16 +30,16 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="R172XK7vyi2xo9GKoF1SkotCwYIuSVSD" />
 
-        <!--<activity android:name=".ui.activity.HomeActivity" />-->
-        <!--<activity android:name=".ui.activity.MyTrucksActivity" />-->
-        <!--<activity android:name=".ui.activity.FindFriendActivity" />-->
-        <!--<activity android:name=".ui.activity.AddTruckActivity" />-->
-        <!--<activity android:name=".ui.activity.PublishSourceActivity" />-->
-        <!--<activity android:name=".ui.activity.IntroduceActivity" />-->
-        <!--<activity android:name=".ui.activity.NameActivity" />-->
-        <!--<activity android:name=".ui.activity.SelectExactPositionActivity" />-->
-        <!--<activity android:name=".ui.activity.ChangeMyInfoActivity" />-->
-        <!--<activity android:name=".ui.activity.TruckSourceSetailActivity" />-->
+        <activity android:name=".ui.activity.HomeActivity" />
+        <activity android:name=".ui.activity.MyTrucksActivity" />
+        <activity android:name=".ui.activity.FindFriendActivity" />
+        <activity android:name=".ui.activity.AddTruckActivity" />
+        <activity android:name=".ui.activity.PublishSourceActivity" />
+        <activity android:name=".ui.activity.IntroduceActivity" />
+        <activity android:name=".ui.activity.NameActivity" />
+        <activity android:name=".ui.activity.SelectExactPositionActivity" />
+        <activity android:name=".ui.activity.ChangeMyInfoActivity" />
+        <activity android:name=".ui.activity.TruckSourceSetailActivity" />
         <service android:name=".im.service.ImService" />
 
         <activity android:name=".ui.activity.LoginActivity">

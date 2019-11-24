@@ -44,7 +44,7 @@ public class Constant {
 //    默认网关. . . . . . . . . . . . . : 192.168.10.1
 //    IPv4 地址 . . . . . . . . . . . . : 192.168.191.1
 //    子网掩码  . . . . . . . . . . . . : 255.255.255.0
-    public static final String baseurl_address = "http://104.194.103.10:8080/truck/";//模拟器
+    public static final String baseurl_address = "http://192.168.0.27:8080/truck/";//模拟器
     public static String baseurl = baseurl_address + "/servlet/";//测试阶段 baseuri在app里获取 因为考虑到真机和模拟器的不同
     //以下部分都需要在app中再次赋值
     public static String url_login = baseurl + "LoginServlet";

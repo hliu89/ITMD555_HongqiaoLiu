@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<area Country="ChinaArea">
+    <province ID="1" province="Alabama" provinceID="110000">
+        <City City="Alabama" CityID="110100">
+            <Piecearea Piecearea="Alexander City" PieceareaID="110101"/>
+            <Piecearea Piecearea="Andalusia" PieceareaID="110102"/>
+            <Piecearea Piecearea="Anniston" PieceareaID="110103"/>
+            <Piecearea Piecearea="Athens" PieceareaID="110104"/>
+            <Piecearea Piecearea="Atmore" PieceareaID="110105"/>
+            <Piecearea Piecearea="Auburn" PieceareaID="110106"/>
+            <Piecearea Piecearea="Bessemer" PieceareaID="110107"/>
+            <Piecearea Piecearea="Birmingham" PieceareaID="110108"/>
+            <Piecearea Piecearea="Chickasaw" PieceareaID="110109"/>
+            <Piecearea Piecearea="Clanton" PieceareaID="110111"/>
+            <Piecearea Piecearea="Cullman" PieceareaID="110112"/>
+            <Piecearea Piecearea="Decatur" PieceareaID="110113"/>
+            <Piecearea Piecearea="Cothan" PieceareaID="110114"/>
+            <Piecearea Piecearea="Enterprise" PieceareaID="110115"/>
+            <Piecearea Piecearea="Eufaula" PieceareaID="110116"/>
+            <Piecearea Piecearea="Florence" PieceareaID="110117"/>
+            <Piecearea Piecearea="Fort Payne" PieceareaID="110228"/>
+            <Piecearea Piecearea="Gadsden" PieceareaID="110229"/>
+        </City>
+    </province>
+    <province ID="2" province="Alaska" provinceID="120000">
+        <City City="Alaska" CityID="120100">
+            <Piecearea Piecearea="Anchorage" PieceareaID="120101"/>
+            <Piecearea Piecearea="Cordova" PieceareaID="120102"/>
+            <Piecearea Piecearea="Fairbanks" PieceareaID="120103"/>
+            <Piecearea Piecearea="Haines" PieceareaID="120104"/>
+            <Piecearea Piecearea="Homer" PieceareaID="120105"/>
+            <Piecearea Piecearea="Juneau" PieceareaID="120106"/>
+            <Piecearea Piecearea="Ketchikan" PieceareaID="120107"/>
+            <Piecearea Piecearea="Kodiak" PieceareaID="120108"/>
+            <Piecearea Piecearea="Kotzebue" PieceareaID="120109"/>
+            <Piecearea Piecearea="Nome" PieceareaID="120110"/>
+            <Piecearea Piecearea="Palmer" PieceareaID="120111"/>
+            <Piecearea Piecearea="Seward" PieceareaID="120112"/>
+            <Piecearea Piecearea="Sitka" PieceareaID="120113"/>
+            <Piecearea Piecearea="Skagway" PieceareaID="120114"/>
+            <Piecearea Piecearea="Valdez" PieceareaID="120115"/>
+        </City>
+    </province>
+    <province ID="3" province="Arizona" provinceID="130000">
+        <City City="Arizona" CityID="130100">
+            <Piecearea Piecearea="Ajo" PieceareaID="130101"/>
+            <Piecearea Piecearea="Avondale" PieceareaID="130102"/>
+            <Piecearea Piecearea="Bisbee" PieceareaID="130103"/>
+            <Piecearea Piecearea="Casa Grande" PieceareaID="130104"/>
+            <Piecearea Piecearea="Chandler" PieceareaID="130105"/>
+            <Piecearea Piecearea="Clifton" PieceareaID="130107"/>
+            <Piecearea Piecearea="Douglas" PieceareaID="130108"/>
+            <Piecearea Piecearea="Flagstaff" PieceareaID="130121"/>
+            <Piecearea Piecearea="Florence" PieceareaID="130123"/>
+            <Piecearea Piecearea="Gila Bend" PieceareaID="130124"/>
+            <Piecearea Piecearea="Glendale" PieceareaID="130125"/>
+            <Piecearea Piecearea="Globe" PieceareaID="130126"/>
+            <Piecearea Piecearea="Kingman" PieceareaID="130127"/>
+            <Piecearea Piecearea="Mesa" PieceareaID="130128"/>
+            <Piecearea Piecearea="Nogales" PieceareaID="130129"/>
+            <Piecearea Piecearea="Oraibi" PieceareaID="130130"/>
+            <Piecearea Piecearea="Phoenix" PieceareaID="130131"/>
+            <Piecearea Piecearea="Prescott" PieceareaID="130132"/>
+            <Piecearea Piecearea="Scottsdale" PieceareaID="130133"/>
+            <Piecearea Piecearea="Sierra Vista" PieceareaID="130181"/>
+            <Piecearea Piecearea="Tempe" PieceareaID="130182"/>
+            <Piecearea Piecearea="Tombstone" PieceareaID="130183"/>
+            <Piecearea Piecearea="Tucson" PieceareaID="130184"/>
+        </City>
+        <City City="Arkansas" CityID="130200">
+            <Piecearea Piecearea="Arkadelphia" PieceareaID="130201"/>
+            <Piecearea Piecearea="Arkansas Post" PieceareaID="130202"/>
+            <Piecearea Piecearea="Bastesville" PieceareaID="130203"/>
+            <Piecearea Piecearea="Benton" PieceareaID="130204"/>
+            <Piecearea Piecearea="Blytheville" PieceareaID="130205"/>
+            <Piecearea Piecearea="Camden" PieceareaID="130207"/>
+            <Piecearea Piecearea="Conway" PieceareaID="130208"/>
+            <Piecearea Piecearea="Crossett" PieceareaID="130223"/>
+            <Piecearea Piecearea="EI Dorado" PieceareaID="130224"/>
+            <Piecearea Piecearea="Fayetteville" PieceareaID="130225"/>
+            <Piecearea Piecearea="Forrest City" PieceareaID="130227"/>
+            <Piecearea Piecearea="Fort Smith" PieceareaID="130229"/>
+            <Piecearea Piecearea="Harrison" PieceareaID="130230"/>
+            <Piecearea Piecearea="Helena" PieceareaID="130281"/>
+            <Piecearea Piecearea="Hope" PieceareaID="130283"/>
+        </City>
+        <City City="Clifornia" CityID="130300">
+            <Piecearea Piecearea="Alameda" PieceareaID="130301"/>
+            <Piecearea Piecearea="Alhambra" PieceareaID="130302"/>
+            <Piecearea Piecearea="Anaheim" PieceareaID="130303"/>
+            <Piecearea Piecearea="Antioch" PieceareaID="130304"/>
+            <Piecearea Piecearea="Arcadia" PieceareaID="130321"/>
+            <Piecearea Piecearea="Bakersfield" PieceareaID="130322"/>
+            <Piecearea Piecearea="Barstow" PieceareaID="130323"/>
+            <Piecearea Piecearea="Belmont" PieceareaID="130324"/>
+        </City>
+    </province>
+</area>

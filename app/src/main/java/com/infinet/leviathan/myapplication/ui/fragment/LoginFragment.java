@@ -13,6 +13,9 @@ import android.widget.TextView;
 
 import com.infinet.leviathan.myapplication.R;
 import com.infinet.leviathan.myapplication.app.Constant;
+import com.infinet.leviathan.myapplication.nohttp.CallServer;
+import com.infinet.leviathan.myapplication.nohttp.HttpListener;
+import com.infinet.leviathan.myapplication.ui.activity.HomeActivity;
 import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
 import com.infinet.leviathan.myapplication.utils.SharedPreferencesUtil;
 import com.infinet.leviathan.myapplication.utils.ViewUtils;

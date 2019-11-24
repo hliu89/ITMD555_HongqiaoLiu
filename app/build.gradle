@@ -15,7 +15,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.xk.trucktrade"
+        applicationId "com.infinet.leviathan.myapplication"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1

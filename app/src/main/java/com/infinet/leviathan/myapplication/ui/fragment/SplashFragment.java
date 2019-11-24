@@ -1,6 +1,7 @@
 package com.infinet.leviathan.myapplication.ui.fragment;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Handler;
@@ -11,10 +12,17 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
 import com.infinet.leviathan.myapplication.R;
 import com.infinet.leviathan.myapplication.app.Constant;
+import com.infinet.leviathan.myapplication.nohttp.CallServer;
+import com.infinet.leviathan.myapplication.nohttp.HttpListener;
+import com.infinet.leviathan.myapplication.ui.activity.HomeActivity;
 import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
 import com.infinet.leviathan.myapplication.utils.SharedPreferencesUtil;
+import com.infinet.leviathan.myapplication.utils.map.MyLocationListener;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.RequestMethod;
 import com.yolanda.nohttp.rest.Request;
@@ -70,6 +78,7 @@ public class SplashFragment extends BaseFragment {
         autoLogin();
     }
 
+    @SuppressLint("MissingPermission")
     private void savePhoneIMEI() {
         TelephonyManager telephonyMgr = (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
         SharedPreferencesUtil.saveString(getContext().getApplicationContext(), Constant.SPKEY_IMEI, telephonyMgr.getDeviceId());

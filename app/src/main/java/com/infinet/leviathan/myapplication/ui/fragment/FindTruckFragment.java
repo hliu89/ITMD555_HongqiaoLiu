@@ -9,6 +9,9 @@ import com.infinet.leviathan.myapplication.app.Constant;
 import com.infinet.leviathan.myapplication.bean.TruckBean;
 import com.infinet.leviathan.myapplication.bean.TruckSourceBean;
 import com.infinet.leviathan.myapplication.bean.UserBean;
+import com.infinet.leviathan.myapplication.nohttp.CallServer;
+import com.infinet.leviathan.myapplication.nohttp.HttpListener;
+import com.infinet.leviathan.myapplication.ui.adapter.TruckInfoAdapter;
 import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.DropMenuAdapter;
 import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterUrl;
 import com.infinet.leviathan.myapplication.utils.ViewUtils;
@@ -26,8 +29,6 @@ import java.util.Calendar;
 
 import filter.DropDownMenu;
 import filter.interfaces.OnFilterDoneListener;
-
-import static com.yolanda.nohttp.NoHttp.getContext;
 
 /**
  * Created by xk on 2016/6/2 20:05.

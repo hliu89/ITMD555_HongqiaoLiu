@@ -4,6 +4,8 @@ import android.content.Context;
 import android.widget.EditText;
 
 import com.infinet.leviathan.myapplication.app.Constant;
+import com.infinet.leviathan.myapplication.nohttp.CallServer;
+import com.infinet.leviathan.myapplication.nohttp.HttpListener;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.RequestMethod;
 import com.yolanda.nohttp.rest.Request;

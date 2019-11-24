@@ -51,7 +51,7 @@ public class MToolbar extends Toolbar implements View.OnClickListener {
 
     private void initView() {
 
-        ib_left = ViewUtils.findViewById(contentView,R.id.ib_left);
+        ib_left = ViewUtils.findViewById(contentView, R.id.ib_left);
         ib_right = ViewUtils.findViewById(contentView,R.id.ib_right);
         tv_left = ViewUtils.findViewById(contentView,R.id.tv_left);
         tv_right = ViewUtils.findViewById(contentView,R.id.tv_right);

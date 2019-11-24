@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.xk.trucktrade.ui.custom.MToolbar
+    <com.infinet.leviathan.myapplication.ui.custom.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+        android:layout_height="@dimen/toolbar_height"></com.infinet.leviathan.myapplication.ui.custom.MToolbar>
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rl_mytrucks"
