@@ -6,27 +6,26 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.baiiu.filter.adapter.MenuAdapter;
-import com.baiiu.filter.adapter.SimpleTextAdapter;
-import com.baiiu.filter.interfaces.OnFilterDoneListener;
-import com.baiiu.filter.interfaces.OnFilterItemClickListener;
-import com.baiiu.filter.typeview.DoubleListView;
-import com.baiiu.filter.typeview.SingleGridView;
-import com.baiiu.filter.typeview.SingleListView;
-import com.baiiu.filter.util.CommonUtil;
-import com.baiiu.filter.util.UIUtil;
-import com.baiiu.filter.view.FilterCheckedTextView;
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.ui.custom.dropdownmenu.entity.FilterType;
-import com.xk.trucktrade.ui.custom.dropdownmenu.entity.FilterUrl;
-import com.xk.trucktrade.ui.custom.dropdownmenu.view.betterDoubleGrid.BetterDoubleGridView;
-import com.xk.trucktrade.ui.custom.dropdownmenu.view.doubleGrid.DoubleGridView;
-import com.xk.trucktrade.utils.XmlUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterType;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterUrl;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.view.betterDoubleGrid.BetterDoubleGridView;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.view.doubleGrid.DoubleGridView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.qqtheme.framework.picker.AddressPicker;
+import filter.adapter.MenuAdapter;
+import filter.adapter.SimpleTextAdapter;
+import filter.interfaces.OnFilterDoneListener;
+import filter.interfaces.OnFilterItemClickListener;
+import filter.typeview.DoubleListView;
+import filter.typeview.SingleGridView;
+import filter.typeview.SingleListView;
+import filter.util.CommonUtil;
+import filter.util.UIUtil;
+import filter.view.FilterCheckedTextView;
 
 /**
  * author: baiiu

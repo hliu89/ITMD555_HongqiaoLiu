@@ -4,19 +4,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.baiiu.filter.DropDownMenu;
-import com.baiiu.filter.interfaces.OnFilterDoneListener;
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.app.Constant;
-import com.xk.trucktrade.bean.TruckBean;
-import com.xk.trucktrade.bean.TruckSourceBean;
-import com.xk.trucktrade.bean.UserBean;
-import com.xk.trucktrade.nohttp.CallServer;
-import com.xk.trucktrade.nohttp.HttpListener;
-import com.xk.trucktrade.ui.adapter.TruckInfoAdapter;
-import com.xk.trucktrade.ui.custom.dropdownmenu.DropMenuAdapter;
-import com.xk.trucktrade.ui.custom.dropdownmenu.entity.FilterUrl;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.app.Constant;
+import com.infinet.leviathan.myapplication.bean.TruckBean;
+import com.infinet.leviathan.myapplication.bean.TruckSourceBean;
+import com.infinet.leviathan.myapplication.bean.UserBean;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.DropMenuAdapter;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterUrl;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.RequestMethod;
 import com.yolanda.nohttp.rest.Request;
@@ -28,6 +23,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+
+import filter.DropDownMenu;
+import filter.interfaces.OnFilterDoneListener;
+
+import static com.yolanda.nohttp.NoHttp.getContext;
 
 /**
  * Created by xk on 2016/6/2 20:05.

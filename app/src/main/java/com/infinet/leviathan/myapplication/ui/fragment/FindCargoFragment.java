@@ -2,8 +2,10 @@ package com.infinet.leviathan.myapplication.ui.fragment;
 
 import android.view.View;
 
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.ui.adapter.CargoInfoAdapter;
+import com.infinet.leviathan.myapplication.R;
+
+import static java.security.AccessController.getContext;
+
 
 /**
  * Created by xk on 2016/6/2 20:05.

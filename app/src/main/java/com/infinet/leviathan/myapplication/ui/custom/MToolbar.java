@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
 
 
 /**

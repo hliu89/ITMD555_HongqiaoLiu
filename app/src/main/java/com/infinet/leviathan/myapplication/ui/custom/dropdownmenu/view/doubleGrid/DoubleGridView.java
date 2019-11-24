@@ -9,16 +9,17 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ScrollView;
 
-import com.baiiu.filter.adapter.SimpleTextAdapter;
-import com.baiiu.filter.interfaces.OnFilterDoneListener;
-import com.baiiu.filter.util.CommonUtil;
-import com.baiiu.filter.util.UIUtil;
-import com.baiiu.filter.view.FilterCheckedTextView;
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.ui.custom.dropdownmenu.entity.FilterUrl;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterUrl;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
 
 import java.util.List;
+
+import filter.adapter.SimpleTextAdapter;
+import filter.interfaces.OnFilterDoneListener;
+import filter.util.CommonUtil;
+import filter.util.UIUtil;
+import filter.view.FilterCheckedTextView;
 
 
 /**
@@ -52,7 +53,7 @@ public class DoubleGridView extends ScrollView implements View.OnClickListener {
         setBackgroundResource(android.R.color.white);
 
 
-        mTopGrid= ViewUtils.findViewById(this,R.id.grid_top);
+        mTopGrid= ViewUtils.findViewById(this, R.id.grid_top);
         mBottomGrid= ViewUtils.findViewById(this,R.id.grid_bottom);
         bt_confirm=ViewUtils.findViewById(this,R.id.bt_confirm);
 

@@ -5,10 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.baiiu.filter.util.UIUtil;
-import com.baiiu.filter.view.FilterCheckedTextView;
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
+
+import filter.util.UIUtil;
+import filter.view.FilterCheckedTextView;
+
 
 /**
  * auther: baiiu

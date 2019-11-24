@@ -19,6 +19,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.infinet.leviathan.myapplication.R;
 import com.infinet.leviathan.myapplication.ui.custom.MaterialProgressDrawable;
 
 public class ViewUtils {

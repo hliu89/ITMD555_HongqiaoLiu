@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.ui.base.BaseFragment;
-import com.xk.trucktrade.ui.custom.DividerItemDecoration;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
+import com.infinet.leviathan.myapplication.ui.custom.DividerItemDecoration;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
 
 
 /**

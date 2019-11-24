@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 
+import com.infinet.leviathan.myapplication.R;
 import com.infinet.leviathan.myapplication.ui.adapter.LoginPagerAdapter;
 import com.infinet.leviathan.myapplication.ui.base.BaseActivity;
 import com.infinet.leviathan.myapplication.ui.fragment.SplashFragment;

@@ -5,20 +5,15 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.app.Constant;
-import com.xk.trucktrade.bean.UserBean;
-import com.xk.trucktrade.nohttp.CallServer;
-import com.xk.trucktrade.nohttp.HttpListener;
-import com.xk.trucktrade.ui.activity.ChangeMyInfoActivity;
-import com.xk.trucktrade.ui.activity.LoginActivity;
-import com.xk.trucktrade.ui.activity.MyTrucksActivity;
-import com.xk.trucktrade.ui.base.BaseFragment;
-import com.xk.trucktrade.ui.custom.CircleImageView;
-import com.xk.trucktrade.ui.custom.OptionItemView;
-import com.xk.trucktrade.utils.PersistenceUtil;
-import com.xk.trucktrade.utils.SharedPreferencesUtil;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.app.Constant;
+import com.infinet.leviathan.myapplication.bean.UserBean;
+import com.infinet.leviathan.myapplication.ui.activity.LoginActivity;
+import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
+import com.infinet.leviathan.myapplication.ui.custom.CircleImageView;
+import com.infinet.leviathan.myapplication.ui.custom.OptionItemView;
+import com.infinet.leviathan.myapplication.utils.SharedPreferencesUtil;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.RequestMethod;
 import com.yolanda.nohttp.rest.Request;
@@ -40,7 +35,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
-        String userInfo = PersistenceUtil.getStringFromFile(SharedPreferencesUtil.getString(getContext(),Constant.SPKEY_CURRENTUSERPHONENUMBER));
+        String userInfo = PersistenceUtil.getStringFromFile(SharedPreferencesUtil.getString(getContext(), Constant.SPKEY_CURRENTUSERPHONENUMBER));
         if (!userInfo.equals("")) {
             UserBean userBean = gson.fromJson(userInfo, UserBean.class);
             civ_owner_phone.setImageURL(userBean.getAvatarurl(),getActivity());

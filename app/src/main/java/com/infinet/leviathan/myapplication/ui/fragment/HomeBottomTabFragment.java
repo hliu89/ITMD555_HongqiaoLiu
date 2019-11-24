@@ -17,11 +17,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.ui.activity.HomeActivity;
-import com.xk.trucktrade.ui.activity.PublishSourceActivity;
-import com.xk.trucktrade.ui.base.BaseFragment;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
+
 
 /**
  * Created by xk on 2016/6/4 10:40.

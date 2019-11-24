@@ -7,7 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
+
 
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
     /**

@@ -11,8 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.infinet.leviathan.myapplication.R;
 import com.infinet.leviathan.myapplication.app.Constant;
 import com.infinet.leviathan.myapplication.ui.base.BaseFragment;
+import com.infinet.leviathan.myapplication.utils.SharedPreferencesUtil;
 import com.infinet.leviathan.myapplication.utils.ViewUtils;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.RequestMethod;

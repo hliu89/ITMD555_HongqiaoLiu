@@ -11,12 +11,13 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.baiiu.filter.interfaces.OnFilterDoneListener;
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.ui.custom.dropdownmenu.entity.FilterUrl;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.entity.FilterUrl;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
 
 import java.util.List;
+
+import filter.interfaces.OnFilterDoneListener;
 
 
 /**
@@ -57,7 +58,7 @@ public class BetterDoubleGridView extends LinearLayout implements View.OnClickLi
     private void init(Context context) {
         setBackgroundColor(Color.WHITE);
         inflate(context, R.layout.merge_filter_double_grid, this);
-        recyclerView=ViewUtils.findViewById(BetterDoubleGridView.this,R.id.recyclerView);
+        recyclerView= ViewUtils.findViewById(BetterDoubleGridView.this,R.id.recyclerView);
         ViewUtils.findViewById(BetterDoubleGridView.this,R.id.bt_confirm).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

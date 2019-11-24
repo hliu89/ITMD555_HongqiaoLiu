@@ -5,8 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.baiiu.filter.util.UIUtil;
-import com.xk.trucktrade.R;
+import com.infinet.leviathan.myapplication.R;
+
+import filter.util.UIUtil;
+
 
 /**
  * auther: baiiu

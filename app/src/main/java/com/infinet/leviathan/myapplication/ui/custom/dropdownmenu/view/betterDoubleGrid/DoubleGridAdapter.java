@@ -5,8 +5,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.xk.trucktrade.ui.custom.dropdownmenu.view.betterDoubleGrid.holder.ItemViewHolder;
-import com.xk.trucktrade.ui.custom.dropdownmenu.view.betterDoubleGrid.holder.TitleViewHolder;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.view.betterDoubleGrid.holder.ItemViewHolder;
+import com.infinet.leviathan.myapplication.ui.custom.dropdownmenu.view.betterDoubleGrid.holder.TitleViewHolder;
 
 import java.util.List;
 

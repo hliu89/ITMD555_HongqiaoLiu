@@ -9,9 +9,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.xk.trucktrade.R;
-import com.xk.trucktrade.utils.AvatarProduceUtil;
-import com.xk.trucktrade.utils.ViewUtils;
+import com.infinet.leviathan.myapplication.R;
+import com.infinet.leviathan.myapplication.utils.ViewUtils;
 
 
 /**

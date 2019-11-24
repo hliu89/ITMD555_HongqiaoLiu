@@ -20,7 +20,7 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.xk.trucktrade.R;
+import com.infinet.leviathan.myapplication.R;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
