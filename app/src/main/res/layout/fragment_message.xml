@@ -28,7 +28,7 @@
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/ic_search"
             android:gravity="center_vertical"
-            android:text="查找好友"
+            android:text="find other user"
             android:textColor="#CCCCCC"
             android:textSize="@dimen/text_size_xh" />
     </RelativeLayout>

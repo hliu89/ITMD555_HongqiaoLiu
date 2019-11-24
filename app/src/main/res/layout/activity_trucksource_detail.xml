@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.infinet.leviathan.myapplication.ui.custom.MToolbar
+    <com.xk.trucktrade.ui.custom.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"></com.infinet.leviathan.myapplication.ui.custom.MToolbar>
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
 
 
-    <com.infinet.leviathan.myapplication.ui.custom.MScrollView
+    <com.xk.trucktrade.ui.custom.MScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -280,7 +280,7 @@ android:id="@+id/tv_publish_time"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.infinet.leviathan.myapplication.ui.custom.CircleImageView
+                <com.xk.trucktrade.ui.custom.CircleImageView
                     android:layout_width="50dp"
                     android:id="@+id/civ_headimg"
                     android:layout_height="50dp"
@@ -361,7 +361,7 @@ android:id="@+id/tv_publish_time"
                 android:textSize="@dimen/text_size_h" />
 
         </LinearLayout>
-    </com.infinet.leviathan.myapplication.ui.custom.MScrollView>
+    </com.xk.trucktrade.ui.custom.MScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"

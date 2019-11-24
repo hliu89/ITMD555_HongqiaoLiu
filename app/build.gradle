@@ -15,7 +15,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.infinet.leviathan.myapplication"
+        applicationId "com.xk.trucktrade"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
@@ -52,5 +52,5 @@ dependencies {
     compile files('libs/baidumapapi_util_v4_0_0.jar')
     compile files('libs/BaiduLBS_Android.jar')
     compile 'com.google.code.gson:gson:2.7'
-    compile project(path: ':mylibrary')
+    compile project(path: ':filter-lib')
 }

@@ -4,10 +4,11 @@
     android:layout_height="match_parent"
     android:background="@color/background_blue"
     android:orientation="vertical">
-    <com.infinet.leviathan.myapplication.ui.custom.MToolbar
+
+    <com.xk.trucktrade.ui.custom.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"/>
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
 
     <RelativeLayout
         android:id="@+id/rl_find_friend"
@@ -17,7 +18,7 @@
         android:layout_marginBottom="2dp"
         android:background="@drawable/round_rectangle_write">
 
-        <com.infinet.leviathan.myapplication.ui.custom.autoqueryedittext.SearchEditText
+        <com.xk.trucktrade.ui.custom.autoqueryedittext.SearchEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

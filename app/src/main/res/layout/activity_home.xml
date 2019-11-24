@@ -10,10 +10,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.infinet.leviathan.myapplication.ui.custom.MToolbar
+        <com.xk.trucktrade.ui.custom.MToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"/>
+            android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -23,11 +23,11 @@
                 android:id="@+id/home_content"
                 android:layout_marginBottom="50dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"></FrameLayout>
 
             <fragment
                 android:id="@+id/home_tab_bottom"
-                android:name="com.infinet.leviathan.myapplication.ui.fragment.HomeBottomTabFragment"
+                android:name="com.xk.trucktrade.ui.fragment.HomeBottomTabFragment"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_alignParentBottom="true"

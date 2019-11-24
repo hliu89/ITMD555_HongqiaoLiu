@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.infinet.leviathan.myapplication.ui.custom.MToolbar
+    <com.xk.trucktrade.ui.custom.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"></com.infinet.leviathan.myapplication.ui.custom.MToolbar>
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="车牌号"
+                    android:text="number"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/text_size_xxh" />
 
@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dp"
                     android:background="@drawable/round_rectangle_line_secondcolor"
-                    android:hint="请输入车牌号"
+                    android:hint="number plate"
                     android:maxLines="1"
                     android:padding="10dp"
                     android:textColor="@color/secondary_text"
@@ -128,7 +128,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="载重"
+                    android:text="weight"
                     android:textColor="@color/primary_text"
                     android:textSize="@dimen/text_size_xxh" />
 
@@ -196,7 +196,7 @@
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:background="@drawable/round_rectangle_line_secondcolor"
-                            android:hint="长"
+                            android:hint="length"
                             android:inputType="number"
                             android:maxLines="1"
                             android:padding="10dp"

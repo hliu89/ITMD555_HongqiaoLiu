@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="添加车辆"
+            android:text="add a new car"
             android:textColor="@color/secondary_text"
             android:textSize="20sp" />
     </LinearLayout>

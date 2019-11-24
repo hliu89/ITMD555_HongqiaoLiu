@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.infinet.leviathan.myapplication.ui.custom.MToolbar
+    <com.xk.trucktrade.ui.custom.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"></com.infinet.leviathan.myapplication.ui.custom.MToolbar>
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <com.infinet.leviathan.myapplication.ui.custom.OptionItem2View
+                <com.xk.trucktrade.ui.custom.OptionItem2View
                     android:id="@+id/oi2v_head"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -32,9 +32,9 @@
                     app:left_text="picture"
                     app:show_img="true"
                     app:show_top_division="true"
-                    app:show_xing="true"></com.infinet.leviathan.myapplication.ui.custom.OptionItem2View>
+                    app:show_xing="true"></com.xk.trucktrade.ui.custom.OptionItem2View>
 
-                <com.infinet.leviathan.myapplication.ui.custom.OptionItem2View
+                <com.xk.trucktrade.ui.custom.OptionItem2View
                     android:id="@+id/oi2v_name"
                     android:layout_width="match_parent"
 
@@ -44,9 +44,9 @@
                     app:show_bottom_division="true"
                     app:show_img="false"
                     app:show_top_division="true"
-                    app:show_xing="true"></com.infinet.leviathan.myapplication.ui.custom.OptionItem2View>
+                    app:show_xing="true"></com.xk.trucktrade.ui.custom.OptionItem2View>
 
-                <com.infinet.leviathan.myapplication.ui.custom.OptionItem2View
+                <com.xk.trucktrade.ui.custom.OptionItem2View
                     android:id="@+id/oi2v_area"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -57,9 +57,9 @@
                     app:show_bottom_division="true"
                     app:show_img="false"
                     app:show_top_division="true"
-                    app:show_xing="false"></com.infinet.leviathan.myapplication.ui.custom.OptionItem2View>
+                    app:show_xing="false"></com.xk.trucktrade.ui.custom.OptionItem2View>
 
-                <com.infinet.leviathan.myapplication.ui.custom.OptionItem2View
+                <com.xk.trucktrade.ui.custom.OptionItem2View
                     android:id="@+id/oi2v_introduce"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
 
                     app:show_bottom_division="true"
                     app:show_img="false"
-                    app:show_xing="false"></com.infinet.leviathan.myapplication.ui.custom.OptionItem2View>
+                    app:show_xing="false"></com.xk.trucktrade.ui.custom.OptionItem2View>
             </LinearLayout>
         </ScrollView>
 
