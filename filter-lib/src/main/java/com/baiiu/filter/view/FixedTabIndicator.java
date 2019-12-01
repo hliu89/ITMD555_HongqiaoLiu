@@ -25,34 +25,34 @@ import java.util.List;
 public class FixedTabIndicator extends LinearLayout {
 
     private Context context;
-    private int mTabVisibleCount = 4;// tab数量
+    private int mTabVisibleCount = 4;// tab
 
     /*
-     * 分割线
+     *
      */
     private Paint mDividerPaint;
-    private int mDividerColor = 0xFFdddddd;// 分割线颜色
-    private int mDividerPadding = 13;// 分割线距离上下padding
+    private int mDividerColor = 0xFFdddddd;//
+    private int mDividerPadding = 13;// padding
 
     /*
-     * 上下两条线
+     *
      */
     private Paint mLinePaint;
     private float mLineHeight = 1;
     private int mLineColor = 0xFFeeeeee;
 
 
-    private int mTabTextSize = 13;// 指针文字的大小,sp
-    private int mTabDefaultColor = 0xFF666666;// 未选中默认颜色
-    private int mTabSelectedColor = 0xFF008DF2;// 指针选中颜色
+    private int mTabTextSize = 13;// ,sp
+    private int mTabDefaultColor = 0xFF666666;//
+    private int mTabSelectedColor = 0xFF008DF2;//
     private int drawableRight = 10;
 
     private int measureHeight;
     private int measuredWidth;
 
-    private int mTabCount;// 设置的条目数量
-    private int mCurrentIndicatorPosition;// 上一个指针选中条目
-    private int mLastIndicatorPosition;// 上一个指针选中条目
+    private int mTabCount;//
+    private int mCurrentIndicatorPosition;//
+    private int mLastIndicatorPosition;//
     private OnItemClickListener mOnItemClickListener;
 
 
@@ -72,15 +72,15 @@ public class FixedTabIndicator extends LinearLayout {
 
 
     /**
-     * 条目点击事件
+     *
      */
     public interface OnItemClickListener {
         /**
-         * 回调方法
          *
-         * @param v        当前点击的view
-         * @param position 当前点击的position
-         * @param open     当前的状态，蓝色为open,筛选器为打开状态
+         *
+         * @param v        view
+         * @param position position
+         * @param open     ，open,
          */
         void onItemClick(View v, int position, boolean open);
     }
@@ -118,7 +118,7 @@ public class FixedTabIndicator extends LinearLayout {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        for (int i = 0; i < mTabCount - 1; ++i) {// 分割线的个数比tab的个数少一个
+        for (int i = 0; i < mTabCount - 1; ++i) {// tab
             final View child = getChildAt(i);
             if (child == null || child.getVisibility() == View.GONE) {
                 continue;
@@ -128,15 +128,15 @@ public class FixedTabIndicator extends LinearLayout {
         }
 
 
-        //上边黑线
+        //
         canvas.drawRect(0, 0, measuredWidth, mLineHeight, mLinePaint);
 
-        //下边黑线
+        //
         canvas.drawRect(0, measureHeight - mLineHeight, measuredWidth, measureHeight, mLinePaint);
     }
 
     /**
-     * 添加相应的布局进此容器
+     *
      */
     public void setTitles(List<String> list) {
         if (list == null || list.isEmpty()) {
@@ -181,7 +181,7 @@ public class FixedTabIndicator extends LinearLayout {
         }
 
         if (mLastIndicatorPosition == pos) {
-            // 点击同一个条目时
+            //
             tv.setTextColor(level == 0 ? mTabSelectedColor : mTabDefaultColor);
             drawable.setLevel(1 - level);
 
@@ -199,7 +199,7 @@ public class FixedTabIndicator extends LinearLayout {
     }
 
     /**
-     * 重置字体颜色
+     *
      */
     public void resetPos(int pos) {
         TextView tv = getChildAtCurPos(pos);
@@ -208,24 +208,24 @@ public class FixedTabIndicator extends LinearLayout {
     }
 
     /**
-     * 重置当前字体颜色
+     *
      */
     public void resetCurrentPos() {
         resetPos(mCurrentIndicatorPosition);
     }
 
     /**
-     * 获取当前pos内的TextView
+     * posTextView
      */
     public TextView getChildAtCurPos(int pos) {
         return (TextView) ((ViewGroup) getChildAt(pos)).getChildAt(0);
     }
 
     /**
-     * 直接用TextView使用weight不能控制图片，需要用用父控件包裹
+     * TextViewweight，
      */
     private View generateTextView(String title, int pos) {
-        // 子空间TextView
+        // TextView
         TextView tv = new TextView(context);
         tv.setGravity(Gravity.CENTER);
         tv.setText(title);
@@ -233,19 +233,19 @@ public class FixedTabIndicator extends LinearLayout {
         tv.setTextColor(mTabDefaultColor);
         tv.setSingleLine();
         tv.setEllipsize(TextUtils.TruncateAt.END);
-        tv.setMaxEms(6);//限制4个字符
+        tv.setMaxEms(6);//4
         Drawable drawable = getResources().getDrawable(R.drawable.level_filter);
         tv.setCompoundDrawablesWithIntrinsicBounds(null, null, drawable, null);
         tv.setCompoundDrawablePadding(drawableRight);
 
-        // 将TextView添加到父控件RelativeLayout
+        // TextViewRelativeLayout
         RelativeLayout rl = new RelativeLayout(context);
         RelativeLayout.LayoutParams rlParams = new RelativeLayout.LayoutParams(-2, -2);
         rlParams.addRule(RelativeLayout.CENTER_IN_PARENT);
         rl.addView(tv, rlParams);
         rl.setId(pos);
 
-        // 再将RelativeLayout添加到LinearLayout中
+        // RelativeLayoutLinearLayout
         LayoutParams params = new LayoutParams(-1, -1);
         params.weight = 1;
         params.gravity = Gravity.CENTER;
@@ -254,7 +254,7 @@ public class FixedTabIndicator extends LinearLayout {
         rl.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 设置点击事件
+                //
                 switchTab(v.getId());
             }
         });
@@ -263,7 +263,7 @@ public class FixedTabIndicator extends LinearLayout {
     }
 
     /**
-     * 高亮字体颜色
+     *
      */
     public void highLightPos(int pos) {
         TextView tv = getChildAtCurPos(pos);

@@ -17,7 +17,7 @@ import com.baiiu.filter.view.FixedTabIndicator;
 
 /**
  * Created by baiiu.
- * 筛选器
+ *
  */
 public class DropDownMenu extends RelativeLayout implements View.OnClickListener, FixedTabIndicator.OnItemClickListener {
 
@@ -61,7 +61,7 @@ public class DropDownMenu extends RelativeLayout implements View.OnClickListener
         removeAllViews();
 
         /*
-         * 1.顶部筛选条
+         * 1.
          */
         fixedTabIndicator = new FixedTabIndicator(getContext());
         fixedTabIndicator.setId(R.id.fixedTabIndicator);
@@ -71,12 +71,12 @@ public class DropDownMenu extends RelativeLayout implements View.OnClickListener
         params.addRule(BELOW, R.id.fixedTabIndicator);
 
         /*
-         * 2.添加contentView,内容界面
+         * 2.contentView,
          */
         addView(contentView, params);
 
         /*
-         * 3.添加展开页面,装载筛选器list
+         * 3.,list
          */
         frameLayoutContainer = new FrameLayout(getContext());
         frameLayoutContainer.setBackgroundColor(getResources().getColor(R.color.black_p50));
@@ -94,19 +94,19 @@ public class DropDownMenu extends RelativeLayout implements View.OnClickListener
         mMenuAdapter = adapter;
         verifyMenuAdapter();
 
-        //1.设置title
+        //1.title
         fixedTabIndicator.setTitles(mMenuAdapter);
 
-        //2.添加view
+        //2.view
         setPositionView();
     }
 
     /**
-     * 可以提供两种方式:
-     * 1.缓存所有view,
-     * 2.只保存当前view
+     * :
+     * 1.view,
+     * 2.view
      * <p/>
-     * 此处选择第二种
+     *
      */
     public void setPositionView() {
         int count = mMenuAdapter.getMenuCount();
@@ -133,7 +133,7 @@ public class DropDownMenu extends RelativeLayout implements View.OnClickListener
         }
 
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(-1, -2);
-        params.bottomMargin = bottomMargin;//添加距离底部高度
+        params.bottomMargin = bottomMargin;//
         frameLayoutContainer.addView(view, position, params);
         view.setVisibility(GONE);
     }
@@ -172,7 +172,7 @@ public class DropDownMenu extends RelativeLayout implements View.OnClickListener
         fixedTabIndicator.setCurrentText(text);
     }
 
-    //=======================之上对外暴漏方法=======================================
+    //==============================================================
     private void initListener() {
         frameLayoutContainer.setOnClickListener(this);
         fixedTabIndicator.setOnItemClickListener(this);
@@ -207,7 +207,7 @@ public class DropDownMenu extends RelativeLayout implements View.OnClickListener
                 frameLayoutContainer.setVisibility(VISIBLE);
                 frameLayoutContainer.startAnimation(alphaOccurAnimation);
 
-                //可移出去,进行每次展出
+                //,
                 currentView.startAnimation(occurAnimation);
             }
 

@@ -15,7 +15,7 @@ import java.util.List;
 
 /**f
  * Created by baiiu on 15/12/17.
- * 双列ListView
+ * ListView
  */
 public class DoubleListView<LEFTD, RIGHTD> extends LinearLayout implements AdapterView.OnItemClickListener {
 
@@ -78,7 +78,7 @@ public class DoubleListView<LEFTD, RIGHTD> extends LinearLayout implements Adapt
         mLeftAdapter.setList(list);
 
         if (checkedPosition != -1) {
-//            lv_left.performItemClick(mLeftAdapter.getView(checkedPositoin, null, null), checkedPositoin, mLeftAdapter.getItemId(checkedPositoin));//调用此方法相当于点击.第一次进来时会触发重复加载.
+//            lv_left.performItemClick(mLeftAdapter.getView(checkedPositoin, null, null), checkedPositoin, mLeftAdapter.getItemId(checkedPositoin));//..
             lv_left.setItemChecked(checkedPosition, true);
         }
     }
@@ -119,7 +119,7 @@ public class DoubleListView<LEFTD, RIGHTD> extends LinearLayout implements Adapt
         return lv_right;
     }
 
-    //========================点击事件===================================
+    //===========================================================
     private int mRightLastChecked;
     private int mLeftLastPosition;
     private int mLeftLastCheckedPosition;
@@ -144,7 +144,7 @@ public class DoubleListView<LEFTD, RIGHTD> extends LinearLayout implements Adapt
                 mRightAdapter.setList(rightds);
 
                 if (CommonUtil.isEmpty(rightds)) {
-                    //当前点的就是这个条目
+                    //
                     mLeftLastCheckedPosition = -1;
                 }
             }

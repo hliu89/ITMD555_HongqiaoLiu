@@ -12,7 +12,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="15dp">
 
-        <com.xk.trucktrade.frontend.tools.CircleImageView
+        <com.xk.CarRenting.frontend.tools.RoundView
             android:id="@+id/civ_owner_phone"
             android:layout_width="55dp"
             android:layout_height="55dp"

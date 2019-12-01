@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.xk.trucktrade.frontend.tools.MToolbar
+    <com.xk.CarRenting.frontend.tools.MToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.frontend.tools.MToolbar>
+        android:layout_height="@dimen/toolbar_height"></com.xk.CarRenting.frontend.tools.MToolbar>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                     android:textSize="@dimen/text_size_h" />
             </LinearLayout>
 
-            <com.xk.trucktrade.frontend.tools.OptionItemView
+            <com.xk.CarRenting.frontend.tools.OptionItemView
                 android:id="@+id/otv_select_load_date"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -51,7 +51,7 @@
                 app:left_text="please choose start date"
                 app:show_bottom_division="true"
                 app:show_jiantou="true"
-                app:show_top_division="true"></com.xk.trucktrade.frontend.tools.OptionItemView>
+                app:show_top_division="true"></com.xk.CarRenting.frontend.tools.OptionItemView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                     android:textSize="@dimen/text_size_h" />
             </LinearLayout>
 
-            <com.xk.trucktrade.frontend.tools.OptionItemView
+            <com.xk.CarRenting.frontend.tools.OptionItemView
                 android:layout_width="match_parent"
                 android:id="@+id/otv_select_start_place"
 
@@ -84,18 +84,18 @@
                 app:left_img="@mipmap/start_place"
                 app:left_text="Please select a starting address"
                 app:show_jiantou="true"
-                app:show_top_division="true"></com.xk.trucktrade.frontend.tools.OptionItemView>
+                app:show_top_division="true"></com.xk.CarRenting.frontend.tools.OptionItemView>
 
-            <com.xk.trucktrade.frontend.tools.OptionItemView
+            <com.xk.CarRenting.frontend.tools.OptionItemView
                 android:id="@+id/otv_select_exact_start_place"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:left_img="@mipmap/exact_start_place"
                 app:left_text="Please select an exact address"
                 app:show_jiantou="true"
-                app:show_top_division="true"></com.xk.trucktrade.frontend.tools.OptionItemView>
+                app:show_top_division="true"></com.xk.CarRenting.frontend.tools.OptionItemView>
 
-            <com.xk.trucktrade.frontend.tools.OptionItemView
+            <com.xk.CarRenting.frontend.tools.OptionItemView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:id="@+id/otv_select_stop_place"
@@ -104,7 +104,7 @@
                 app:left_text="Please select the arrival address"
                 app:show_bottom_division="true"
                 app:show_jiantou="true"
-                app:show_top_division="true"></com.xk.trucktrade.frontend.tools.OptionItemView>
+                app:show_top_division="true"></com.xk.CarRenting.frontend.tools.OptionItemView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
                     android:textSize="@dimen/text_size_h" />
             </LinearLayout>
 
-            <com.xk.trucktrade.frontend.tools.OptionItemView
+            <com.xk.CarRenting.frontend.tools.OptionItemView
                 android:layout_width="match_parent"
                 android:id="@+id/otv_select_truck"
 
@@ -138,7 +138,7 @@
                 app:left_text="Choose the starting vehicle"
                 app:show_bottom_division="true"
                 app:show_jiantou="true"
-                app:show_top_division="true"></com.xk.trucktrade.frontend.tools.OptionItemView>
+                app:show_top_division="true"></com.xk.CarRenting.frontend.tools.OptionItemView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -163,7 +163,7 @@
                     android:textSize="@dimen/text_size_h" />
             </LinearLayout>
 
-                <com.xk.trucktrade.frontend.tools.OptionItemView
+                <com.xk.CarRenting.frontend.tools.OptionItemView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 app:left_img="@mipmap/introduce"
@@ -172,7 +172,7 @@
                 app:left_text="Add note information"
                 app:show_bottom_division="true"
                 app:show_jiantou="true"
-                app:show_top_division="true"></com.xk.trucktrade.frontend.tools.OptionItemView>
+                app:show_top_division="true"></com.xk.CarRenting.frontend.tools.OptionItemView>
             <Button
                 android:id="@+id/btn_publish"
                 android:layout_width="match_parent"

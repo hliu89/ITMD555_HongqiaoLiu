@@ -29,7 +29,7 @@
 
     <dimen name="comment_avatar_size">55dp</dimen>
 
-    <!-- CommentFragment 底部的 "写评论" 的高度 -->
+    <!-- CommentFragment  ""  -->
     <dimen name="comment_bar_height">53dp</dimen>
 
     <dimen name="post_image_list_item_size">80dp</dimen>

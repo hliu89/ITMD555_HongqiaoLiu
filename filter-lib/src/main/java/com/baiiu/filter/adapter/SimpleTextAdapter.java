@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * Created by baiiu on 15/12/23.
- * 菜单条目适配器
+ *
  */
 public abstract class SimpleTextAdapter<T> extends BaseBaseAdapter<T> {
 

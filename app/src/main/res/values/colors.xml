@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#8e3fb5</color>
+    <color name="colorPrimaryDark">#80309f</color>
     <color name="colorAccent">#FF4081</color>
 
     <color name="primary">@color/scheme_red</color>
     <color name="primary_dark">@color/scheme_red_dark</color>
     <color name="primary_light">@color/scheme_red_light</color>
-    <color name="accent">#448AFF</color>
+    <color name="accent">#44c4ff</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
@@ -21,7 +21,7 @@
     <color name="comment_divider">#cccccc</color>
 
 
-    <!-- 配色方案 -->
+    <!--  -->
     <color name="scheme_black">#2D4059</color>
     <color name="scheme_red_light">#FFCDD2</color>
     <color name="scheme_red">#F44336</color>

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Created by baiiu on 15/11/25.
- * 简单的通用util
+ * util
  */
 public class CommonUtil {
 
@@ -19,7 +19,7 @@ public class CommonUtil {
         return !isEmpty(list);
     }
 
-    //全部为空
+    //
     public static boolean isAllEmpty(List... lists) {
         List<Boolean> booleans = new ArrayList<>();
 
@@ -32,7 +32,7 @@ public class CommonUtil {
         return notEmpty(booleans) && booleans.contains(Boolean.FALSE);
     }
 
-    //只有一个为空
+    //
     public static boolean isOneEmpty(List... lists) {
         for (List list : lists) {
             if (isEmpty(list)) {
@@ -65,7 +65,7 @@ public class CommonUtil {
         return notEmpty(booleans) && booleans.contains(Boolean.FALSE);
     }
 
-    //只有一个为空
+    //
     public static boolean isOneEmpty(String... strings) {
         for (String s : strings) {
             if (isEmpty(s)) {

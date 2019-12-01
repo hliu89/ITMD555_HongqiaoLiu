@@ -7,17 +7,17 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="toolbarStyle">@style/AppTheme.Toolbar</item>
-        <!-- 用于改变 EditText 底部横线的颜色 -->
+        <!--  EditText  -->
         <item name="colorControlActivated">?attr/colorPrimary</item>
     </style>
 
     <style name="AppTheme.Toolbar" parent="Widget.AppCompat.Toolbar">
-        <!-- 设置该属性解决 Toolbar 左边残留空白部分的问题 -->
+        <!--  Toolbar  -->
         <item name="contentInsetStart">0dp</item>
     </style>
 
     <style name="AppTheme.AlertDialog">
-        <!-- 该属性解决对话框宽度被固定的问题 -->
+        <!--  -->
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>

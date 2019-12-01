@@ -21,8 +21,8 @@ public abstract class BaseBaseAdapter<T> extends BaseAdapter {
     }
 
     /**
-     * 设置数据。<BR>
-     * 会清空原集合所有数据,后添加。
+     * 。<BR>
+     * ,。
      *
      * @param list
      */
@@ -42,7 +42,7 @@ public abstract class BaseBaseAdapter<T> extends BaseAdapter {
     }
 
     /**
-     * 添加集合数据到原集合首位，下拉刷新时使用
+     * ，
      *
      * @param list
      */
@@ -61,8 +61,8 @@ public abstract class BaseBaseAdapter<T> extends BaseAdapter {
     }
 
     /**
-     * 添加数据到末尾，用于上拉加载等情况。<BR>
-     * 不清楚原集合，添加到末尾。
+     * ，。<BR>
+     * ，。
      *
      * @param list
      */
@@ -74,7 +74,7 @@ public abstract class BaseBaseAdapter<T> extends BaseAdapter {
     }
 
     /**
-     * 添加元素到集合末尾
+     *
      *
      * @param t
      */

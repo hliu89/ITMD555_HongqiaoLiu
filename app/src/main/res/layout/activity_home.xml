@@ -10,10 +10,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.xk.trucktrade.frontend.tools.MToolbar
+        <com.xk.CarRenting.frontend.tools.MToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.frontend.tools.MToolbar>
+            android:layout_height="@dimen/toolbar_height"></com.xk.CarRenting.frontend.tools.MToolbar>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -27,7 +27,7 @@
 
             <fragment
                 android:id="@+id/home_tab_bottom"
-                android:name="com.xk.trucktrade.frontend.fragment.HomeBottomTabFragment"
+                android:name="com.xk.CarRenting.frontend.fragment.HomeBottomTabFragment"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_alignParentBottom="true"

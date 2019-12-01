@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * Created by baiiu on 15/12/17.
- * 双列ListView
+ * ListView
  */
 public class SingleListView<DATA> extends ListView implements AdapterView.OnItemClickListener {
 

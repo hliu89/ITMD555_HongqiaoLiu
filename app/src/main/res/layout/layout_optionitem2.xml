@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!--上面的分割线-->
+    <!---->
     <View
         android:id="@+id/divider_top"
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
             android:textSize="@dimen/text_size_xh" />
 
 
-        <com.xk.trucktrade.frontend.tools.CircleImageView
+        <com.xk.CarRenting.frontend.tools.RoundView
             android:id="@+id/iv_right"
             android:layout_width="65dp"
             android:layout_height="65dp"
@@ -71,7 +71,7 @@
             android:textColor="@color/secondary_text"
             android:textSize="@dimen/text_size_h" />
     </RelativeLayout>
-    <!--下面的分割线-->
+    <!---->
     <View
         android:id="@+id/divider_bottom"
         android:layout_width="match_parent"
