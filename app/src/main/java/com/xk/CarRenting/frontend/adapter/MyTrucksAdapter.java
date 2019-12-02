@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.xk.CarRenting.R;
-import com.xk.CarRenting.bean.TruckBean;
+import com.xk.CarRenting.bean.CarBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ import java.util.List;
  *  Adapter
  */
 public class MyTrucksAdapter extends RecyclerView.Adapter<MyTrucksAdapter.MViewHolder> {
-    protected List<TruckBean> dataList = new ArrayList<TruckBean>();
+    protected List<CarBean> dataList = new ArrayList<CarBean>();
     private Context context;
     private RecyclerView recyclerView;
     public MyTrucksAdapter(Context context, RecyclerView recyclerView) {
@@ -31,7 +31,7 @@ public class MyTrucksAdapter extends RecyclerView.Adapter<MyTrucksAdapter.MViewH
      *
      * @return
      */
-    public List<TruckBean> getDataList() {
+    public List<CarBean> getDataList() {
         return dataList;
     }
 
@@ -40,7 +40,7 @@ public class MyTrucksAdapter extends RecyclerView.Adapter<MyTrucksAdapter.MViewH
      *
      * @param datas
      */
-    public void setDataList(List<TruckBean> datas) {
+    public void setDataList(List<CarBean> datas) {
         dataList.clear();
         if (null != datas) {
             dataList.addAll(datas);
@@ -54,14 +54,14 @@ public class MyTrucksAdapter extends RecyclerView.Adapter<MyTrucksAdapter.MViewH
      *
      * @param datas
      */
-    public void addDataList(List<TruckBean> datas) {
+    public void addDataList(List<CarBean> datas) {
         dataList.addAll(datas);
     }
 
     @Override
     public MViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if(viewType==0){
-            View v = View.inflate(context, R.layout.item_my_truck, null);
+            View v = View.inflate(context, R.layout.item_my_car, null);
             v.setTag(viewType);
             v.setLayoutParams(new LinearLayout.LayoutParams(RecyclerView.LayoutParams.MATCH_PARENT, RecyclerView.LayoutParams.WRAP_CONTENT));
             return new MViewHolder(v);
@@ -95,14 +95,14 @@ public class MyTrucksAdapter extends RecyclerView.Adapter<MyTrucksAdapter.MViewH
                 }
             });
         }
-        TruckBean truckBean = dataList.get(position);
+        CarBean carBean = dataList.get(position);
 
-        holder.tv_weight.setText("weight" + truckBean.getWeight() + "t");
-        holder.tv_hight.setText("length" + truckBean.getLength() + "m");
-        holder.tv_width.setText("width" + truckBean.getWidth() + "m");
-        holder.tv_length.setText("height" + truckBean.getHight() + "m");
-        holder.tv_variety.setText(truckBean.getVariety() + "");
-        holder.tv_truckcardnumber.setText("" + truckBean.getTruckCardNumber());
+        holder.tv_weight.setText("weight" + carBean.getWeight() + "t");
+        holder.tv_hight.setText("length" + carBean.getLength() + "m");
+        holder.tv_width.setText("width" + carBean.getWidth() + "m");
+        holder.tv_length.setText("height" + carBean.getHight() + "m");
+        holder.tv_variety.setText(carBean.getVariety() + "");
+        holder.tv_truckcardnumber.setText("" + carBean.getTruckCardNumber());
 //        holder.iv_select.settext
 
     }

@@ -121,19 +121,19 @@ public class FindFriendActivity extends BaseActivity {
                         User userBean = new User();
                         userBean.setUsername(jsonObject.has("username") ? jsonObject.getString("username") : "no username");
                         userBean.setAvatarurl(jsonObject.has("avatarurl") ? jsonObject.getString("avatarurl") : "");
-                        userBean.setPhoneNumber(jsonObject.getString("phonenumber"));
+                        userBean.setPhone(jsonObject.getString("phonenumber"));
                         users.add(userBean);
                     }
                     ArrayList<User> newUsers = users;
                     for (int i = 0; i < newUsers.size(); i++) {
-                        if (newUsers.get(i).getPhoneNumber().equals(SharedPreferencesUtil.getString(getApplicationContext(), Constant.SPKEY_CURRENTUSERPHONENUMBER))) {
+                        if (newUsers.get(i).getPhone().equals(SharedPreferencesUtil.getString(getApplicationContext(), Constant.SPKEY_CURRENTUSERPHONENUMBER))) {
                             users.remove(i);
                         }
                     }
 
                     if (myCaredFriendPhone.size() > 0) {
                         for (User user : users) {
-                            if (myCaredFriendPhone.contains(user.getPhoneNumber())) {
+                            if (myCaredFriendPhone.contains(user.getPhone())) {
                                 user.setIsChecked(true);
                             } else {
                                 user.setIsChecked(false);
@@ -222,7 +222,7 @@ public class FindFriendActivity extends BaseActivity {
                                 User userBean = new User();
                                 userBean.setUsername(jsonObject.has("username") ? jsonObject.getString("username") : "no username");
                                 userBean.setAvatarurl(jsonObject.has("avatarurl") ? jsonObject.getString("avatarurl") : "");
-                                userBean.setPhoneNumber(jsonObject.getString("phonenumber"));
+                                userBean.setPhone(jsonObject.getString("phonenumber"));
                                 userBean.setIsChecked(jsonObject.getBoolean("ischeck"));
                                 users.add(userBean);
                             } catch (JSONException e) {

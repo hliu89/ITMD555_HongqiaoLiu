@@ -103,10 +103,10 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.MViewHolde
             public void onClick(View v) {
                 if (holder.ll_cared.getVisibility()== View.VISIBLE) {
                     //
-                    requestCancelCaredFriend(holder,SharedPreferencesUtil.getString(context, Constant.SPKEY_CURRENTUSERPHONENUMBER),friendBean.getPhoneNumber());
+                    requestCancelCaredFriend(holder,SharedPreferencesUtil.getString(context, Constant.SPKEY_CURRENTUSERPHONENUMBER),friendBean.getPhone());
                 }else{
                     //
-                     requestCaredFriend(holder,SharedPreferencesUtil.getString(context, Constant.SPKEY_CURRENTUSERPHONENUMBER),friendBean.getPhoneNumber());
+                     requestCaredFriend(holder,SharedPreferencesUtil.getString(context, Constant.SPKEY_CURRENTUSERPHONENUMBER),friendBean.getPhone());
 
                 }
             }

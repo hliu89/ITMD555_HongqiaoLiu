@@ -8,8 +8,8 @@
     <color name="primary_dark">@color/scheme_red_dark</color>
     <color name="primary_light">@color/scheme_red_light</color>
     <color name="accent">#44c4ff</color>
-    <color name="primary_text">#212121</color>
-    <color name="secondary_text">#727272</color>
+    <color name="primary_text">#180505</color>
+    <color name="secondary_text">#747070</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
 
@@ -23,8 +23,8 @@
 
     <!--  -->
     <color name="scheme_black">#2D4059</color>
-    <color name="scheme_red_light">#FFCDD2</color>
-    <color name="scheme_red">#F44336</color>
+    <color name="scheme_red_light">#eca9b0</color>
+    <color name="scheme_red">#ec7970</color>
     <color name="scheme_red_dark">#D32F2F</color>
     <color name="scheme_orange">#F07B3F</color>
     <color name="scheme_yellow">#FFD460</color>
@@ -34,9 +34,9 @@
 
 
     <color name="red_500">#e51c23</color>
-    <color name="blue_500">#5677fc</color>
-    <color name="indigo_500">#3f51b5</color>
-    <color name="deep_purple_500">#673ab7</color>
-    <color name="teal_500">#009688</color>
+    <color name="blue_500">#6785ff</color>
+    <color name="indigo_500">#5c6ed1</color>
+    <color name="deep_purple_500">#6b40b9</color>
+    <color name="teal_500">#11867b</color>
 
 </resources>

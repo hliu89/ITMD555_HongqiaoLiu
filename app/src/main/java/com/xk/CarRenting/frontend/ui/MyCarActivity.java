@@ -8,7 +8,7 @@ import android.view.WindowManager;
 
 import com.xk.CarRenting.R;
 import com.xk.CarRenting.app.Constant;
-import com.xk.CarRenting.bean.TruckBean;
+import com.xk.CarRenting.bean.CarBean;
 import com.xk.CarRenting.nohttpHelper.CallServer;
 import com.xk.CarRenting.nohttpHelper.HttpListener;
 import com.xk.CarRenting.frontend.adapter.MyTrucksAdapter;
@@ -129,21 +129,21 @@ public class MyCarActivity extends BaseActivity implements View.OnClickListener 
         CallServer.getRequestInstance().add(this, Constant.reuqest_queryalltruck, registerRequest, new HttpListener<JSONArray>() {
             @Override
             public void onSucceed(int what, Response<JSONArray> response) {
-                ArrayList<TruckBean> truckBeens = new ArrayList<>();
+                ArrayList<CarBean> truckBeens = new ArrayList<>();
                 try {
                     JSONArray jsonArray = response.get();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject json = (JSONObject) jsonArray.get(i);
-                        TruckBean truckBean = new TruckBean();
-                        truckBean.setHight(json.getString("height"));
-                        truckBean.setLength(json.getString("length"));
-                        truckBean.setTruckBrith(json.getString("truckbirth"));
-                        truckBean.setTruckCardNumber(json.getString("truckcardnumber"));
-                        truckBean.setVariety(json.getString("variety"));
-                        truckBean.setWeight(json.getString("weight"));
-                        truckBean.setWidth(json.getString("width"));
-                        truckBean.set_id(json.getString("id"));
-                        truckBeens.add(truckBean);
+                        CarBean carBean = new CarBean();
+                        carBean.setHight(json.getString("height"));
+                        carBean.setLength(json.getString("length"));
+                        carBean.setTruckBrith(json.getString("truckbirth"));
+                        carBean.setTruckCardNumber(json.getString("truckcardnumber"));
+                        carBean.setVariety(json.getString("variety"));
+                        carBean.setWeight(json.getString("weight"));
+                        carBean.setWidth(json.getString("width"));
+                        carBean.set_id(json.getString("id"));
+                        truckBeens.add(carBean);
                     }
                     myTrucksAdapter.setDataList(truckBeens);
                 } catch (JSONException e) {

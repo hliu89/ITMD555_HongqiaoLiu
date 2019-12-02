@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by xk on 2016/6/12 18:41.
  */
-public class TruckSourceBean implements Serializable{
+public class CarSourceBean implements Serializable{
     private String _id;
     private String load_date;
     private String start_place;
@@ -15,7 +15,7 @@ public class TruckSourceBean implements Serializable{
     private String publish_date;
     private String state;
     private String truck_id;
-    private TruckBean truckBean;
+    private CarBean carBean;
     private User userBean;
 
     public User getUserBean() {
@@ -26,12 +26,12 @@ public class TruckSourceBean implements Serializable{
         this.userBean = userBean;
     }
 
-    public TruckBean getTruckBean() {
-        return truckBean;
+    public CarBean getCarBean() {
+        return carBean;
     }
 
-    public void setTruckBean(TruckBean truckBean) {
-        this.truckBean = truckBean;
+    public void setCarBean(CarBean carBean) {
+        this.carBean = carBean;
     }
 
     public String get_id() {
@@ -118,7 +118,7 @@ public class TruckSourceBean implements Serializable{
                 ", publish_date='" + publish_date + '\'' +
                 ", state='" + state + '\'' +
                 ", truck_id='" + truck_id + '\'' +
-                ", truckBean=" + truckBean +
+                ", truckBean=" + carBean +
                 ", userBean=" + userBean +
                 '}';
     }

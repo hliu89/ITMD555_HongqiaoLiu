@@ -9,7 +9,7 @@ public class User implements Serializable{
 
 
     private String password;
-    private String phoneNumber;
+    private String phone;
     private String leanCloudId;
     private String username;
     private String province;
@@ -33,12 +33,12 @@ public class User implements Serializable{
         this.password = password;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getLeanCloudId() {
@@ -133,7 +133,7 @@ public class User implements Serializable{
     public String toString() {
         return "UserBean{" +
                 "password='" + password + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", phone='" + phone + '\'' +
                 ", leanCloudId='" + leanCloudId + '\'' +
                 ", username='" + username + '\'' +
                 ", province='" + province + '\'' +

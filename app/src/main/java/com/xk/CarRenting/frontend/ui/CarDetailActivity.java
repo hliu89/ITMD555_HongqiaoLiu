@@ -23,7 +23,7 @@ import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
 import com.baidu.mapapi.utils.DistanceUtil;
 import com.xk.CarRenting.R;
 import com.xk.CarRenting.app.Constant;
-import com.xk.CarRenting.bean.TruckSourceBean;
+import com.xk.CarRenting.bean.CarSourceBean;
 import com.xk.CarRenting.frontend.baseActivity.BaseActivity;
 import com.xk.CarRenting.frontend.tools.RoundView;
 import com.xk.CarRenting.frontend.tools.MToolbar;
@@ -43,7 +43,7 @@ public class CarDetailActivity extends BaseActivity {
     private TextView tv_name, tv_introduce, tv_start_point, tv_stop_point, tv_car_number, tv_exact_position, tv_distance, tv_publish_time, tv_start_time, tv_truck_type;
     private MToolbar toolbar;
     private RoundView civ_headimg;
-    private TruckSourceBean trucksource;
+    private CarSourceBean trucksource;
     private GeoCoder mSearch;
 
     @Override
@@ -86,7 +86,7 @@ public class CarDetailActivity extends BaseActivity {
         toolbar.setLeftImageButton(R.mipmap.ic_arrow_back);
         toolbar.setTitle("vehicle detail");
         if (bundle != null) {
-            trucksource = (TruckSourceBean) bundle.getSerializable("trucksource");
+            trucksource = (CarSourceBean) bundle.getSerializable("trucksource");
         }
     }
 
@@ -120,7 +120,7 @@ public class CarDetailActivity extends BaseActivity {
         String format = decimalFormat.format(fDistance);
 
         tv_name.setText(trucksource.getUserBean().getUsername().length() == 0 ? "no username" : trucksource.getUserBean().getUsername());
-        tv_car_number.setText(trucksource.getTruckBean().getTruckCardNumber());
+        tv_car_number.setText(trucksource.getCarBean().getTruckCardNumber());
         tv_stop_point.setText(trucksource.getStop_place());
         tv_start_point.setText(trucksource.getStart_place());
         tv_introduce.setText(trucksource.getIntrocd().length() == 0 ? "nothing" : trucksource.getIntrocd());
@@ -135,8 +135,8 @@ public class CarDetailActivity extends BaseActivity {
         }
         tv_start_time.setText(trucksource.getLoad_date());
 
-        tv_truck_type.setText(trucksource.getTruckBean().getVariety() + " length" + trucksource.getTruckBean().getLength() + "m width" + trucksource.getTruckBean().getWidth() + "m hight"
-                + trucksource.getTruckBean().getHight() + "m wieght" + trucksource.getTruckBean().getWeight() + "Ton");
+        tv_truck_type.setText(trucksource.getCarBean().getVariety() + " length" + trucksource.getCarBean().getLength() + "m width" + trucksource.getCarBean().getWidth() + "m hight"
+                + trucksource.getCarBean().getHight() + "m wieght" + trucksource.getCarBean().getWeight() + "Ton");
 
     }
 

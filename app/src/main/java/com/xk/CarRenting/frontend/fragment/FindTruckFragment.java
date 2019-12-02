@@ -8,8 +8,8 @@ import com.baiiu.filter.DropDownMenu;
 import com.baiiu.filter.interfaces.OnFilterDoneListener;
 import com.xk.CarRenting.R;
 import com.xk.CarRenting.app.Constant;
-import com.xk.CarRenting.bean.TruckBean;
-import com.xk.CarRenting.bean.TruckSourceBean;
+import com.xk.CarRenting.bean.CarBean;
+import com.xk.CarRenting.bean.CarSourceBean;
 import com.xk.CarRenting.bean.User;
 import com.xk.CarRenting.nohttpHelper.CallServer;
 import com.xk.CarRenting.nohttpHelper.HttpListener;
@@ -40,7 +40,7 @@ public class FindTruckFragment extends TabTopRefreshBaseFragment implements OnFi
 
     @Override
     protected void setLayoutRes() {
-        layoutRes = R.layout.fragment_findtruck;
+        layoutRes = R.layout.fragment_findcar;
     }
 
     @Override
@@ -111,14 +111,14 @@ public class FindTruckFragment extends TabTopRefreshBaseFragment implements OnFi
         CallServer.getRequestInstance().add(getContext(), Constant.reuqest_queryalltrucksource, registerRequest, new HttpListener<JSONArray>() {
             @Override
             public void onSucceed(int what, Response<JSONArray> response) {
-                ArrayList<TruckSourceBean> truckSourceBeans = new ArrayList<>();
+                ArrayList<CarSourceBean> carSourceBeans = new ArrayList<>();
                 try {
                     JSONArray jsonArray = response.get();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject json = (JSONObject) jsonArray.get(i);
                         User userBean = new User();
                         JSONObject userJson = json.getJSONObject("user");
-                        userBean.setPhoneNumber(userJson.getString("phoneNumber"));
+                        userBean.setPhone(userJson.getString("phoneNumber"));
                         userBean.setUsername(userJson.getString("username"));
                         userBean.setProvince(userJson.getString("province"));
                         userBean.setCity(userJson.getString("city"));
@@ -127,30 +127,30 @@ public class FindTruckFragment extends TabTopRefreshBaseFragment implements OnFi
                         userBean.setAvatarurl(userJson.getString("avatarurl"));
                         userBean.setIntroduce(userJson.getString("introduce"));
 
-                        TruckBean truckBean = new TruckBean();
+                        CarBean carBean = new CarBean();
                         JSONObject truckJson = json.getJSONObject("truck");
-                        truckBean.setTruckBrith(truckJson.getString("truckbirth"));
-                        truckBean.setLength(truckJson.getString("length"));
-                        truckBean.setWidth(truckJson.getString("width"));
-                        truckBean.setHight(truckJson.getString("height"));
-                        truckBean.setWeight(truckJson.getString("weight"));
-                        truckBean.setTruckCardNumber(truckJson.getString("truckcardnumber"));
-                        truckBean.setVariety(truckJson.getString("variety"));
+                        carBean.setTruckBrith(truckJson.getString("truckbirth"));
+                        carBean.setLength(truckJson.getString("length"));
+                        carBean.setWidth(truckJson.getString("width"));
+                        carBean.setHight(truckJson.getString("height"));
+                        carBean.setWeight(truckJson.getString("weight"));
+                        carBean.setTruckCardNumber(truckJson.getString("truckcardnumber"));
+                        carBean.setVariety(truckJson.getString("variety"));
 
-                        TruckSourceBean truckSourceBean = new TruckSourceBean();
-                        truckSourceBean.setIntrocd(json.getString("introcduce"));
-                        truckSourceBean.setLoad_date(json.getString("load_date"));
-                        truckSourceBean.setPublish_date(json.getString("publish_date"));
-                        truckSourceBean.setStart_place(json.getString("start_place"));
-                        truckSourceBean.setStart_place_point(json.getString("start_place_point"));
-                        truckSourceBean.setState(json.getString("state"));
-                        truckSourceBean.setStop_place(json.getString("stop_place"));
-                        truckSourceBean.setTruckBean(truckBean);
-                        truckSourceBean.setUserBean(userBean);
-                        truckSourceBeans.add(truckSourceBean);
+                        CarSourceBean carSourceBean = new CarSourceBean();
+                        carSourceBean.setIntrocd(json.getString("introcduce"));
+                        carSourceBean.setLoad_date(json.getString("load_date"));
+                        carSourceBean.setPublish_date(json.getString("publish_date"));
+                        carSourceBean.setStart_place(json.getString("start_place"));
+                        carSourceBean.setStart_place_point(json.getString("start_place_point"));
+                        carSourceBean.setState(json.getString("state"));
+                        carSourceBean.setStop_place(json.getString("stop_place"));
+                        carSourceBean.setCarBean(carBean);
+                        carSourceBean.setUserBean(userBean);
+                        carSourceBeans.add(carSourceBean);
                     }
 
-                    truckInfoAdapter.setData(truckSourceBeans);
+                    truckInfoAdapter.setData(carSourceBeans);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

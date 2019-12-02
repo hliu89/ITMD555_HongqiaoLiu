@@ -15,14 +15,14 @@ import cn.qqtheme.framework.picker.AddressPicker.*;
  * Created by warren on 11/7/15.
  *
  */
-public class AddressManager {
+public class AddressHelper {
     private List<AddressPicker.Province> provinces;
 
-    public AddressManager() {
+    public AddressHelper() {
         provinces = XmlUtils.parseArea(App.getInstance(), "China_area.xml");
     }
 
-    public AddressManager(Context context) {
+    public AddressHelper(Context context) {
         provinces = XmlUtils.parseArea(context, "China_area.xml");
     }
 
@@ -32,7 +32,7 @@ public class AddressManager {
      * @param rawString
      * @return
      */
-    public static String getCodeInRawString(String rawString) {
+    public static String getCodeInRaw(String rawString) {
         if (!rawString.contains(":"))
             return "";
 
@@ -55,7 +55,7 @@ public class AddressManager {
         return null;
     }
 
-    public AddressPicker.City getCityByCCode(Province province, String cCode) {
+    public AddressPicker.City getCity_Code(Province province, String cCode) {
         if (cCode == null)
             return null;
         for (int i = 0; i < province.getCities().size(); i++) {
@@ -66,7 +66,7 @@ public class AddressManager {
         return null;
     }
 
-    public County getDistrictBydCode(City city, String dCode) {
+    public County getBydCodeToCountry(City city, String dCode) {
         if (dCode == null)
             return null;
         for (County county : city.getCounties())
@@ -92,21 +92,21 @@ public class AddressManager {
 
         for (String rawData : rawAddress) {
             if (rawData.contains("pcode")) {
-                province = getProvinceByPCode(getCodeInRawString(rawData));
+                province = getProvinceByPCode(getCodeInRaw(rawData));
                 address.append(province.getAreaName()).append(" ");
             }
 
             if (rawData.contains("ccode") && province != null) {
-                city = getCityByCCode(province, getCodeInRawString(rawData));
+                city = getCity_Code(province, getCodeInRaw(rawData));
                 address.append(city.getAreaName()).append(" ");
             }
 
             if (rawData.contains("dcode") && city != null) {
-                county = getDistrictBydCode(city, getCodeInRawString(rawData));
+                county = getBydCodeToCountry(city, getCodeInRaw(rawData));
                 address.append(county.getAreaName()).append(" ");
             }
             if (rawData.contains("details")) {
-                detail = getCodeInRawString(rawData);
+                detail = getCodeInRaw(rawData);
                 address.append(detail);
             }
         }
@@ -130,12 +130,12 @@ public class AddressManager {
 
         for (String rawData : rawAddress) {
             if (rawData.contains("pcode")) {
-                province = getProvinceByPCode(getCodeInRawString(rawData));
+                province = getProvinceByPCode(getCodeInRaw(rawData));
 //                address.append(province.getName()).append(" ");
             }
 
             if (rawData.contains("ccode") && province != null) {
-                city = getCityByCCode(province, getCodeInRawString(rawData));
+                city = getCity_Code(province, getCodeInRaw(rawData));
                 address.append(city.getAreaName()).append(" ");
             }
         }

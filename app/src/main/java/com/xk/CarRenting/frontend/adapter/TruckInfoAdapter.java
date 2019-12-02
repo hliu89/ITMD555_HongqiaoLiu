@@ -19,7 +19,7 @@ import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.utils.DistanceUtil;
 import com.xk.CarRenting.R;
 import com.xk.CarRenting.app.Constant;
-import com.xk.CarRenting.bean.TruckSourceBean;
+import com.xk.CarRenting.bean.CarSourceBean;
 import com.xk.CarRenting.frontend.ui.CarDetailActivity;
 import com.xk.CarRenting.frontend.baseActivity.BaseActivity;
 import com.xk.CarRenting.frontend.tools.RoundView;
@@ -38,7 +38,7 @@ import java.util.List;
 public class TruckInfoAdapter extends RecyclerView.Adapter<TruckInfoAdapter.MViewHolder> {
     private AvatarProduceUtil avatarProducUtil;
     private Context context;
-    private List<TruckSourceBean> data = new ArrayList<TruckSourceBean>();
+    private List<CarSourceBean> data = new ArrayList<CarSourceBean>();
     private RecyclerView recyclerView;
 
     public TruckInfoAdapter(Context context, RecyclerView recyclerView) {
@@ -49,7 +49,7 @@ public class TruckInfoAdapter extends RecyclerView.Adapter<TruckInfoAdapter.MVie
 
     @Override
     public MViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = View.inflate(context, R.layout.item_truck_info, null);
+        View v = View.inflate(context, R.layout.item_car_info, null);
         return new MViewHolder(v);
     }
 
@@ -57,12 +57,12 @@ public class TruckInfoAdapter extends RecyclerView.Adapter<TruckInfoAdapter.MVie
     @Override
     public void onBindViewHolder(final MViewHolder holder, final int position) {
         holder.tv_owner_name.setText(data.get(position).getUserBean().getUsername().length() == 0 ? "no username" : data.get(position).getUserBean().getUsername());
-        holder.tv_truckcardnumber.setText(data.get(position).getTruckBean().getTruckCardNumber());
+        holder.tv_truckcardnumber.setText(data.get(position).getCarBean().getTruckCardNumber());
         holder.tv_stop_point.setText(data.get(position).getStop_place());
         holder.tv_start_point.setText(data.get(position).getStart_place());
-        holder.tv_truck_length.setText("length" + data.get(position).getTruckBean().getLength() + "m");
-        holder.tv_truck_weight.setText("weight" + data.get(position).getTruckBean().getWeight() + "t");
-        holder.tv_truck_type.setText(data.get(position).getTruckBean().getVariety());
+        holder.tv_truck_length.setText("length" + data.get(position).getCarBean().getLength() + "m");
+        holder.tv_truck_weight.setText("weight" + data.get(position).getCarBean().getWeight() + "t");
+        holder.tv_truck_type.setText(data.get(position).getCarBean().getVariety());
         holder.tv_introduce.setText(data.get(position).getIntrocd().length() == 0 ? "no more information" : data.get(position).getIntrocd());
         Date date = new Date(Long.parseLong(data.get(position).getPublish_date()));
         holder.tv_publish_time.setText(RelativeDateFormat.format(date, new SimpleDateFormat("yyyy/MM/dd")));
@@ -94,7 +94,7 @@ public class TruckInfoAdapter extends RecyclerView.Adapter<TruckInfoAdapter.MVie
         holder.ic_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + data.get(position).getUserBean().getPhoneNumber()));
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + data.get(position).getUserBean().getPhone()));
                 if (ActivityCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: by xk 2016/7/28 16:46
                     return;
@@ -143,7 +143,7 @@ public class TruckInfoAdapter extends RecyclerView.Adapter<TruckInfoAdapter.MVie
      *
      * @return
      */
-    public List<TruckSourceBean> getData() {
+    public List<CarSourceBean> getData() {
         return data;
     }
 
@@ -152,7 +152,7 @@ public class TruckInfoAdapter extends RecyclerView.Adapter<TruckInfoAdapter.MVie
      *
      * @param datas
      */
-    public void setData(List<TruckSourceBean> datas) {
+    public void setData(List<CarSourceBean> datas) {
         data.clear();
         if (null != datas) {
             data.addAll(datas);

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by xk on 2016/6/12 18:41.
  */
-public class TruckBean implements Serializable{
+public class CarBean implements Serializable{
     private String _id;
     private String truckBrith;
     private String length;
@@ -18,7 +18,7 @@ public class TruckBean implements Serializable{
     private User master;
     private List<String> truckPhotos;
 
-    public TruckBean() {
+    public CarBean() {
     }
 
 
